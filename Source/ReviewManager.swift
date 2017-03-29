@@ -50,7 +50,7 @@ public class ReviewManager {
     
     public func openAppStore(appId: String)
     {
-        UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/app/id\(appId)")!)
+        UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(appId)")!, options: [:], completionHandler: nil)
     }
     
     @objc fileprivate func showStoreFromTimer(timer: Timer)

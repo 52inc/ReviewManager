@@ -29,7 +29,7 @@ A simple class to handle fallbacks from iOS 10.3's review prompt and automatical
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ReviewManagerLib/*.*'
+  s.source_files = 'Source/*.*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'StoreKit'

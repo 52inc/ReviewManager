@@ -50,7 +50,12 @@ public class ReviewManager {
     
     public func openAppStore(appId: String)
     {
-        UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(appId)")!, options: [:], completionHandler: nil)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(appId)")!, options: [:], completionHandler: nil)
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/app/id\(appId)")!)
+        }
     }
     
     @objc fileprivate func showStoreFromTimer(timer: Timer)

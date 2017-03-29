@@ -28,7 +28,7 @@ class ViewController: UIViewController {
          3. There are rules as to when it will be shown to App Store users, and it can be disabled globally by a user (hence the need for fallback).
          
            Note from developer:
-         1. Please don't use this to auto-prompt / send people to the App Store. It's terribly user hostile. This was developer for if you need a "rate app" button in your app, and where the button not doing anything looks like a glitch.
+         1. Please don't use this to auto-prompt / send people to the App Store. It's terribly user hostile. This was developed for if you need a "rate app" button in your app, and where the button not doing anything looks like a glitch.
          */
         
         // Obviously this demo app isn't on the App Store, so we'll use the Apple Store app as the App Store link fallback for example purposes.

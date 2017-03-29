@@ -11,7 +11,7 @@ import StoreKit
 
 public class ReviewManager {
     
-    static let shared: ReviewManager = ReviewManager()
+    public static let shared: ReviewManager = ReviewManager()
     
     fileprivate var reviewPromptTimer: Timer? {
         willSet {

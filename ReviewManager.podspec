@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReviewManager'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2
   s.summary          = 'A simple class to handle fallbacks from iOS 10.3\'s review prompt.'
 
 # This description is used to generate tags and improve search results.

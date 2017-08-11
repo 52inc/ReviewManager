@@ -1,3 +1,5 @@
+# NOTE: As of iOS 10.3’s release, we’ve verified that this library only works with the prompt shown in development builds of your app. It doesn’t work with ‘real’ prompts shown for App Store users. As a result, consider this library deprecated. It will be removed from Github soon.
+
 # ReviewManager
 A simple class to handle fallbacks from iOS 10.3's review prompt and automatically forward them to the App Store if the prompt doesn't show.
 
@@ -12,15 +14,15 @@ Add the file "ReviewManager.swift" from the Source folder to your project and ma
 ### Usage
 Usage is very simple.
 
-`````
+```
 ReviewManager.shared.promptForReview(appId: "Your-app-store-id-here")
-`````
+```
 
 An example for the Apple Store app is:
 
-`````
+```
 ReviewManager.shared.promptForReview(appId: "375380948")
-`````
+```
 
 ### Behavior notes on iOS 10.3's prompt
 1. On debug builds the iOS 10.3 prompt always shows

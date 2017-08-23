@@ -51,10 +51,10 @@ public class ReviewManager {
     public func openAppStore(appId: String)
     {
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(appId)")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(appId)?action=write-review")!, options: [:], completionHandler: nil)
         } else {
             // Fallback on earlier versions
-            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/app/id\(appId)")!)
+            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/app/id\(appId)?action=write-review")!)
         }
     }
     
